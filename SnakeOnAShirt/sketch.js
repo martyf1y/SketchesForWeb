@@ -48,7 +48,7 @@ let snake;
 function setup() {
   // frameRate(5);
   //createCanvas(window.innerWidth/2, window.innerHeight/2);
-  createCanvas(window.innerWidth, window.innerHeight);
+  createCanvas(window.innerWidth/2, window.innerHeight/2);
   background(0);
   snake = new Snake(ledSlot);
   reset();
