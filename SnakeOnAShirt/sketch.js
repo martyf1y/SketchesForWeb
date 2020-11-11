@@ -37,7 +37,7 @@ let LEDArray = [
 let tCols = LEDArray.length;
 let tRows = Math.max(...LEDArray);
 let ledBright = [];
-let ledSize = 10;
+let ledSize = Math.floor(window.innerHeight/tRows*0.25);
 let ledSlot = ledSize * 2;
 let center = ledSlot * 0.5;
 let tLEDWidth = tCols * ledSlot;
@@ -48,7 +48,7 @@ let snake;
 function setup() {
   // frameRate(5);
   //createCanvas(window.innerWidth/2, window.innerHeight/2);
-  createCanvas(window.innerWidth, window.innerHeight);
+  createCanvas(window.innerWidth/2, window.innerHeight/2);
   background(0);
   snake = new Snake(ledSlot);
   reset();
